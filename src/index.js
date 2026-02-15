@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 connectDB()
   .then(async () => {
     console.log("Connected to the DB successfully.");
-    await syncModels();
+    // await syncModels();
     app.listen(PORT, () => {
       console.log(`Server listening on PORT: ${PORT}`);
     });

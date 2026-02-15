@@ -46,14 +46,14 @@ Inquiry.belongsTo(Product, {
   foreignKey: "productId",
 });
 
-// SYNC MODELS
-export const syncModels = async () => {
-  try {
-    await sequelize.sync({ alter: true });
-    console.log("Models synced successfully");
-  } catch (err) {
-    console.error("Model sync failed:", err);
-  }
-};
+// // SYNC MODELS
+// export const syncModels = async () => {
+//   try {
+//     await sequelize.sync({ alter: true });
+//     console.log("Models synced successfully");
+//   } catch (err) {
+//     console.error("Model sync failed:", err);
+//   }
+// };
 
 export { User, Category, Artisan, Product, View, Inquiry };
