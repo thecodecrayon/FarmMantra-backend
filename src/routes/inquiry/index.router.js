@@ -2,7 +2,7 @@ import express from "express";
 import {
   createNewInquiry,
   listInquiries,
-} from "../../controllers/Inquiry/index.controller.js";
+} from "../../controllers/inquiry/index.controller.js";
 
 const router = express.Router();
 
