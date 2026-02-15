@@ -1,5 +1,9 @@
 import dotenv from "dotenv";
-dotenv.config({ path: "./.env" });
+
+// Only load .env file in development
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config({ path: "./.env" });
+}
 
 import app from "./app.js";
 import { connectDB } from "./db/connectDB.js";
